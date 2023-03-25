@@ -1,0 +1,571 @@
+/* CSS wymagane przez klienta */
+
+.zloty {
+  color: #B7895B;
+}
+
+.szary{
+  color: #F3F3F3;
+}
+
+.tekst {
+  color: #474747;
+}
+
+.czcionkaNawigacja {
+font-family: Raleway;
+font-size: 18px;
+font-weight: 400;
+line-height: 21px;
+}
+
+.czcionkaNadtutuly {
+font-family: Raleway;
+font-size: 18px;
+font-weight: 400;
+line-height: 27px;
+}
+
+.czcionkaTytulSekcji {
+font-family: Raleway;
+font-size: 48px;
+font-weight: 600;
+line-height: 48px;
+}
+
+.czcionkaTeksty{
+font-family: Raleway;
+font-size: 16px;
+font-weight: 400;
+line-height: 24px;
+}
+
+/* CSS Web Simple */
+
+body {
+  margin: 0;
+}
+
+.grafika_1{
+  width: 100%;
+}
+
+header {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  position:fixed;
+  width: 100%;
+  z-index: 99999999;
+}
+
+.image-clickable {
+  margin-right: auto;
+  padding-left: 15rem;
+}
+
+.logo {
+  height: 10rem;
+  margin-right: auto;
+}
+
+.nav-links {
+  list-style: none;
+  padding-right: 15rem;
+}
+
+.nav-links li {
+  display: inline-block;
+  padding: 0 1.25rem;
+}
+
+.nav-links li a {
+  text-decoration: none;
+  transition: all 0.5s ease 0s;
+}
+
+.hover-overline-animation {
+  display: inline-block;
+  position: relative;
+  text-decoration: none;
+}
+
+.hover-overline-animation::after {
+  content: '';
+  position: absolute;
+  width: 100%;
+  transform: scaleX(0);
+  height: 2px;
+  top: -10px;
+  left: 0;
+  background-color: #474747;
+  transform-origin: bottom right;
+}
+
+.hover-overline-animation:hover::after {
+  transform: scaleX(1);
+  transform-origin: bottom left;
+}
+
+#modul_1 {
+  width: 100%;
+}
+
+.container {
+  padding: 10rem 15rem;
+  margin-bottom: 5rem;
+}
+
+.row {
+  width: 100%;
+  padding-bottom: 2rem;
+  margin-bottom: 5rem;
+}
+
+.col {
+  display: inline;
+  width: 10%;
+  float: left;
+  margin-left:0px;
+  margin-right:0px;
+  padding-left:0px;
+  padding-right:0px;
+  margin-bottom: 5rem;
+}
+
+.col-2 {
+  display: inline;
+  width: 20%;
+  float: left;
+  margin-left:0px;
+  margin-right:0px;
+  padding-left:0px;
+  padding-right:0px;
+  margin-bottom: 5rem;
+}
+
+.col-3 {
+  display: inline;
+  width: 30%;
+  float: left;
+  margin-left:0px;
+  margin-right:0px;
+  padding-left:0px;
+  padding-right:0px;
+  margin-bottom: 5rem;
+}
+
+.borderTop {
+  border-top: 1px solid #B7895B;
+}
+
+#wrapper-carousel {
+  position: relative;
+  width: 100%;
+  max-height: 300px;
+  margin: 0 auto;
+  overflow: hidden;
+  display:flex;
+}
+#main-carousel {
+  position: relative;
+  width: 100%;
+  height: 300px;
+  overflow:hidden;
+}
+#container-carousel {
+  position: absolute;
+  width: 100%;
+  height: 300px;
+}
+.child {
+  width: 33.3%;
+  height: 300px;
+  float: left;
+}
+
+.right, .left {
+  position: absolute;
+  z-index: 999;
+}
+
+.left{
+  top: 150px;
+  left: 10%;
+}
+
+.right {
+  top: 150px;
+  left: 90%;
+}
+
+.col13{
+  display: inline;
+  position: absolute;
+  width: 40%;
+  float: left;
+  margin-left:0px;
+  margin-right:0px;
+  padding-left:0px;
+  padding-right:0px;
+  margin-bottom: 5rem;
+  background-color: transparent;
+}
+
+.col23{
+  display: inline;
+  width: 60%;
+  height: 500px;
+  float: right;
+  margin-left:0px;
+  margin-right:0px;
+  padding-left:0px;
+  padding-right:0px;
+  margin-bottom: 5rem;
+}
+
+.col14{
+  display: inline;
+  position: absolute;
+  width: 40%;
+  float: right;
+  right: 15rem;
+  margin-left:0px;
+  margin-right:0px;
+  padding-left:0px;
+  padding-right:0px;
+  margin-bottom: 5rem;
+  background-color: transparent;
+}
+
+.col24{
+  display: inline;
+  width: 60%;
+  height: 500px;
+  float: left;
+  margin-left:0px;
+  margin-right:0px;
+  padding-left:0px;
+  padding-right:0px;
+  margin-bottom: 5rem;
+}
+
+.col15{
+  display: inline;
+  position: absolute;
+  width: 40%;
+  height: 400px;
+  float: left;
+  margin-left:0px;
+  margin-right:0px;
+  padding-left:0px;
+  padding-right:0px;
+  margin-bottom: 5rem;
+  background-color: transparent;
+}
+
+.graf1{
+  background-image: url("imgs/vis/1.jpg");
+  background-size: cover;
+  height: 300px;
+}
+
+.graf2{
+  background-image: url("imgs/vis/2.jpg");
+  background-size: cover;
+}
+
+.graf3{
+  background-image: url("imgs/vis/3.jpg");
+  background-size: cover;
+  height: 300px;
+}
+
+.graf4{
+  background-image: url("imgs/vis/4.jpg");
+  background-size: cover;
+}
+
+.infoText{
+  background-color: lightgray;
+  margin: 5rem 5rem 5rem 0;
+  padding: 5rem;
+}
+
+.infoText2{
+  background-color: lightgray;
+  margin: 5rem 0 5rem 5rem;
+  padding: 5rem;
+}
+
+.infoText3{
+  background-color: lightgray;
+  padding: 5rem;
+}
+
+.grafika_2{
+  width: 100%;
+}
+
+.wstawka {
+  background-color: white;
+  position: absolute;
+  z-index: 9999;
+  width: 50%;
+  padding: 2rem;
+  margin: 5rem 5rem 0 0;
+  text-align: left;
+}
+
+.col30 {
+  display: table-cell;
+  width: 15rem;
+}
+
+.col70 {
+  display: table-cell;
+  width: 35rem;
+}
+
+.button {
+  border: 1px solid black;
+  background-color: white; 
+  color: black;
+  padding: 16px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  transition-duration: 0.4s;
+  cursor: pointer;
+  margin-right: 10rem;
+}
+
+.button:hover {
+  background-color: #B7895B;
+  color: white;
+}
+
+.przesunLewo{
+  padding-left: 20rem;
+}
+
+.przesunPrawo{
+  padding-right: 20rem;
+}
+
+/*Gallery*/
+.grid-gallery{
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 50px 20px;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  grid-auto-rows: 250px;
+  grid-auto-flow: dense;
+  grid-gap: 20px;
+}
+
+.grid-gallery .grid-item{
+  position: relative;
+  background-color: #efefef;
+  overflow: hidden;
+
+}
+
+.grid-gallery .grid-item img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.5s cubic-bezier(0.165, 0.84, 0.44, 1) ;
+}
+
+.grid-gallery .grid-item:hover img {
+  transform: scale(1.0);
+}
+
+.grid-gallery .grid-item a {
+  cursor: zoom-in;
+}
+.grid-gallery .grid-item:nth-child(3n - 2) {
+  grid-column: span 2;
+  grid-row: span 2;
+}
+
+/*Form*/
+
+.czciakaformularz {
+font-family: Raleway;
+font-size: 48px;
+font-weight: 600;
+line-height: 48px;
+text-align: center;
+text-decoration: underline;
+justify-content: center;
+align-items: center;
+}
+
+.form__group {
+  position: relative;
+  padding: 15px 0 0;
+  margin-top: 10px;
+  width: 50%;
+  left: 25%;
+}
+
+.form__field {
+  font-family: inherit;
+  width: 100%;
+  border: 0;
+  border-bottom: 2px solid #9b9b9b;
+  outline: 0;
+  font-size: 1.3rem;
+  color: black;
+  padding: 7px 0;
+  background: transparent;
+  transition: border-color 0.2s;
+}
+
+.form__field::placeholder {
+  color: transparent;
+}
+
+.form__field:placeholder-shown ~ .form__label {
+  font-size: 1.3rem;
+  cursor: text;
+  top: 20px;
+}
+
+.form__label {
+  position: absolute;
+  top: 0;
+  display: block;
+  transition: 0.2s;
+  font-size: 1rem;
+  color: #9b9b9b;
+}
+
+.form__field:focus {
+  padding-bottom: 6px;
+  font-weight: 700;
+  border-width: 3px;
+  border-image: linear-gradient(black);
+  border-image-slice: 1;
+}
+
+.form__field:focus ~ .form__label {
+  position: absolute;
+  top: 0;
+  display: block;
+  transition: 0.2s;
+  font-size: 1rem;
+  color: black;
+  font-weight: 700;
+}
+
+/* reset input */
+
+.form__field:required, .form__field:invalid {
+  box-shadow: none;
+}
+
+.container_form{
+  background-color: #f2f2f2;
+  padding: 5rem 15rem;
+  text-align: center;
+
+}
+
+textarea
+{
+   resize: none;
+   height: 200px;
+   width: 100%;
+   background-color: #f2f2f2;
+}
+
+.buttonformularz{
+  margin-right: auto;
+  background-color: #f2f2f2;
+}
+
+.button-enoyer {
+  border: 1px solid black;
+  background-color: lightgray;
+  color: black;
+  padding: 16px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  transition-duration: 0.4s;
+  cursor: pointer;
+  margin-right: 10rem;
+}
+
+.button-plans {
+  border: 1px solid black;
+  background-color: white; 
+  color: black;
+  padding: 16px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  transition-duration: 0.4s;
+  cursor: pointer;
+  margin-right: 10rem;
+  margin-left: 30%;
+}
+
+/* Footer */
+
+.nav-links-footer {
+  list-style: none;
+  text-align: center;
+}
+
+.nav-links-footer li {
+  display: inline-block;
+  padding: 0 1.25rem;
+  align-items: center;
+}
+
+.nav-links-footer li a {
+  text-decoration: none;
+  color: white
+  ;
+}
+
+footer{
+  background-color: rgb(8, 2, 2);
+  position: absolute;
+  width: 100%;
+  height: auto;
+  padding-top: 80px;
+  background-color: black;
+  color: white;
+}
+.footer-widget{
+  width: 33%;
+}
+
+.wrapper{
+  display: flex;
+  text-align: center;
+}
+.naima-logo{
+  width: 50%;
+}
+
+.footer_left{
+  text-align: left;
+}
+
+.footer_right{
+  text-align: right;
+}
